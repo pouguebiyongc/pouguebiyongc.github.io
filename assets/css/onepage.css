@@ -246,9 +246,10 @@ h2{
 .onepage .top-icon svg{
   width: 12px;
   height: 12px;
-  fill: var(--wb-blue);
+  fill: #000000;  /* slightly darker on hover */
   display: block;
 }
+
 
 .onepage .top-icon:hover{
   transform: translateY(-1px);
