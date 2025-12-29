@@ -168,11 +168,10 @@ h2{
 }
 
 .onepage .about-photo{
-  width: 72px;          /* small, discreet */
-  height: 72px;
+  width: 110px;
+  height: 110px;
   border-radius: 50%;
   object-fit: cover;
-  flex-shrink: 0;
   border: 1px solid var(--border);
 }
 
