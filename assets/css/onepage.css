@@ -83,6 +83,13 @@ html{ scroll-behavior:smooth; }
   border-bottom: 1px solid var(--border);
 }
 .section:last-child{ border-bottom:0; }
+.onepage .section{
+  background: #ffffff;
+  padding: 22px 24px;
+  margin-bottom: 18px;
+  border-radius: 6px;
+}
+
 
 h2{
   margin:0 0 10px;
