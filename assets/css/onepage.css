@@ -1,0 +1,143 @@
+/* One-page Nina-inspired layout with sticky top bar */
+
+:root{
+  --wb-blue:#0072bc;
+  --wb-blue-dark:#005b97;
+  --text:#1f2937;
+  --muted:#6b7280;
+  --border:#e5e7eb;
+  --maxw:860px;
+}
+
+*{ box-sizing:border-box; }
+html{ scroll-behavior:smooth; }
+
+.onepage{
+  margin:0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  color: var(--text);
+  background:#fff;
+  line-height:1.6;
+}
+
+/* Sticky bandeau */
+.topbar{
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background:#fff;
+  border-bottom: 1px solid var(--border);
+}
+
+.topbar-inner{
+  max-width: calc(var(--maxw) + 48px);
+  margin: 0 auto;
+  padding: 14px 16px;
+  display:flex;
+  align-items:center;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+.brand-name{
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+}
+
+/* Nav links */
+.topnav{
+  display:flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.topnav a{
+  color: var(--text);
+  text-decoration:none;
+  padding: 6px 2px;
+  border-bottom: 2px solid transparent;
+}
+
+.topnav a:hover{
+  border-color: rgba(0,114,188,.35);
+}
+
+.topnav a:focus{
+  outline: 2px solid rgba(0,114,188,.35);
+  outline-offset: 3px;
+}
+
+/* Main layout */
+.main{
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 22px 16px 50px;
+}
+
+.section{
+  padding: 20px 0;
+  border-bottom: 1px solid var(--border);
+}
+.section:last-child{ border-bottom:0; }
+
+h2{
+  margin:0 0 10px;
+  font-size:1.25rem;
+}
+
+/* About intro */
+.intro{
+  margin: 0 0 14px;
+  color: var(--text);
+}
+
+/* Nina-like icon row under About */
+.iconrow{
+  display:flex;
+  gap: 12px;
+  margin: 8px 0 4px;
+}
+
+.iconlink{
+  width: 28px;              /* smaller circle */
+  height: 28px;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  background:#fff;
+  transition: transform .12s ease, border-color .12s ease;
+}
+
+.iconlink svg{
+  width: 14px;              /* smaller icon */
+  height: 14px;
+  fill: var(--wb-blue);
+}
+
+.iconlink:hover{
+  transform: translateY(-1px);
+  border-color: var(--wb-blue);
+  box-shadow: 0 6px 14px rgba(0,114,188,.18);
+}
+
+/* Research items */
+.item{ margin: 14px 0 18px; }
+.item-title{ font-weight: 600; }
+.item-meta{ color: var(--muted); font-size: .95rem; }
+.item-links{ color: var(--muted); font-size: .95rem; }
+.item-links a{ color: var(--wb-blue); }
+
+/* Anchor offset so headings don’t hide behind sticky bar */
+.section{
+  scroll-margin-top: 70px;
+}
+
+/* Mobile */
+@media (max-width: 520px){
+  .topbar-inner{ align-items:flex-start; flex-direction:column; }
+  .topnav{ gap: 10px; }
+}
