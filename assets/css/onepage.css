@@ -306,4 +306,26 @@ h2{
   }
 }
 
+/* Force photo on top, icons underneath in the left area */
+.onepage .top-left{
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.onepage .top-icons{
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+/* Safety: ensure SVGs always render at the right size */
+.onepage .top-icon svg{
+  width: 12px !important;
+  height: 12px !important;
+  display: block !important;
+  fill: var(--wb-blue) !important;
+}
+
+
 
