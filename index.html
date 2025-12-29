@@ -1,83 +1,101 @@
-
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>About — Clémence Pougué Biyong</title>
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-      referrerpolicy="no-referrer" />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Source+Sans+3:wght@400;500&display=swap" rel="stylesheet">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Clémence Pougué Biyong</title>
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
-<header class="site-header large-header">
-  <div class="container profile-layout">
-    <div class="profile-photo">
-      <img src="assets/img/Photo.jpeg" alt="Clemence Pougué Biyong">
-    </div>
-    <div class="profile-text">
-        <h1>Clémence Pougué Biyong</h1>
-        <p class="tagline">Economist </p>
-        <!-- Icon row: Email • LinkedIn • Scholar • CV -->
-<div class="icon-row">
-  <!-- Email -->
-  <a href="mailto:cpouguebiyong@worldbank.org" class="icon" title="Email">
-    <i class="fa-solid fa-envelope"></i>
-  </a>
+  <!-- Left sidebar (bandeau) -->
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+      <h1 class="name">CLÉMENCE POUGUÉ BIYONG</h1>
+      <p class="title">Economist</p>
 
-  <!-- LinkedIn -->
-  <a href="https://www.linkedin.com/in/cl%C3%A9mence-pougu%C3%A9-biyong-87492a155/?originalSubdomain=fr"
-     class="icon" title="LinkedIn" target="_blank" rel="noopener">
-    <i class="fa-brands fa-linkedin"></i>
-  </a>
+      <div class="icons">
+        <a href="mailto:cpouguebiyong@worldbank.org" class="icon" title="Email" aria-label="Email">
+          <!-- envelope -->
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 6.5A2.5 2.5 0 0 1 4.5 4h15A2.5 2.5 0 0 1 22 6.5v11A2.5 2.5 0 0 1 19.5 20h-15A2.5 2.5 0 0 1 2 17.5v-11Zm2 .3v.3l8 5.2 8-5.2v-.3a.5.5 0 0 0-.5-.5h-15a.5.5 0 0 0-.5.5Zm16 2.1-7.4 4.8a1.5 1.5 0 0 1-1.6 0L3 8.9v8.6a.5.5 0 0 0 .5.5h15a.5.5 0 0 0 .5-.5V8.9Z"/></svg>
+        </a>
 
-  <!-- Google Scholar (no official FA icon, use cap or your own PNG) -->
-  <a href="https://scholar.google.com/citations?user=H5azOdEAAAAJ&hl=fr&oi=ao"
-     class="icon" title="Google Scholar" target="_blank" rel="noopener">
-    <i class="fa-solid fa-graduation-cap"></i>
-    <!-- or replace the <i> with <img src="assets/img/google-scholar.png" alt="Google Scholar"> -->
-  </a>
+        <a href="https://www.linkedin.com/in/cl%C3%A9mence-pougu%C3%A9-biyong-87492a155" target="_blank" rel="noopener"
+           class="icon" title="LinkedIn" aria-label="LinkedIn">
+          <!-- linkedin -->
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4.98 3.5A2.48 2.48 0 1 1 2.5 1a2.48 2.48 0 0 1 2.48 2.5zM.5 8.5h4V23h-4zM8.5 8.5h3.8v2h.05c.53-1 1.84-2.05 3.79-2.05 4.05 0 4.8 2.67 4.8 6.14V23h-4v-5.4c0-1.29-.02-2.95-1.8-2.95-1.8 0-2.08 1.4-2.08 2.85V23h-4z"/></svg>
+        </a>
 
-  <!-- CV -->
-  <a href="assets/cv/cv.pdf" class="icon" title="Download CV" target="_blank" rel="noopener">
-    <i class="fa-solid fa-file-lines"></i>
-  </a>
-</div>
+        <a href="https://scholar.google.com/citations?user=H5azOdEAAAAJ&hl=fr" target="_blank" rel="noopener"
+           class="icon" title="Google Scholar" aria-label="Google Scholar">
+          <!-- mortarboard -->
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 1 8l11 5 9-4.09V17h2V8L12 3zm-1 14.5-6.5-3V18L11 21l6.5-3v-3.5L11 17.5z"/></svg>
+        </a>
 
+        <a href="assets/cv/cv.pdf" target="_blank" rel="noopener" class="icon" title="CV" aria-label="CV">
+          <!-- file -->
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2h8l4 4v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zm8 1.5V7h3.5L14 3.5zM7 12h10v1.5H7V12zm0 3h10v1.5H7V15zm0-6h6v1.5H7V9z"/></svg>
+        </a>
+      </div>
 
-     
-<!-- ✅ Keep the navbar inside the header -->
       <nav class="nav">
-        <a href="index.html" class="active">About</a>
-        <a href="research.html">Research</a>
+        <a href="#about">About</a>
+        <a href="#publications">Publications</a>
+        <a href="#policy">Policy</a>
+        <a href="#wpwip">Working Papers &amp; WIP</a>
+        <a href="#resting">Resting Papers</a>
       </nav>
     </div>
-  </div>
-</header>
+  </aside>
 
-<main class="container content">
-  <p class="bio">
-    I am an economist with an expertise in impact evaluation of public policies and interventions advancing women’s economic empowerment.
-</p> 
-  <p class="bio"> 
-    Since 2023 I have been working at the <a href="https://www.worldbank.org/ext/en/home" target="_blank">World Bank</a>, <a href=https://www.worldbank.org/en/programs/africa-gender-innovation-lab target="_blank">Africa Gender Innovation Lab</a>. 
-I explore how legal and policy reforms, coupled with innovative field interventions, can strengthen women’s human capital, unlock productivity, and drive inclusive prosperity.
-</p> 
-  <p class="bio">
-  I received my PhD in economics from the <a href="https://centredeconomiesorbonne.cnrs.fr/en/home/" target="_blank">University of Paris 1 Panthéon-Sorbonne</a> (2023) and my Master in Law from the <a href="https://www.ens-rennes.fr/" target="_blank">Ecole Normale Supérieure</a> (2017).
-  </p>
-</main>
+  <!-- Right content -->
+  <main class="content">
+    <section id="about">
+      <h2>About</h2>
+      <p>
+        Write your bio here. You can add links like
+        <a href="https://wbl.worldbank.org/" target="_blank" rel="noopener">Women, Business and the Law</a>.
+      </p>
+    </section>
 
-<footer class="site-footer">
-  <div class="container">
-    <small>
-      Hosted on GitHub Pages — Theme inspired by
-      <a href="https://github.com/orderedlist">orderedlist</a>.
-    </small>
-  </div>
-</footer>
+    <section id="publications">
+      <h2>Publications</h2>
 
+      <div class="item">
+        <div class="item-title">Paper Title (Year)</div>
+        <div class="item-meta">with Co-authors • Journal / Status</div>
+        <div class="item-links">
+          <a href="#">PDF</a> · <a href="#">Code</a> · <a href="#">Slides</a>
+        </div>
+      </div>
+
+    </section>
+
+    <section id="policy">
+      <h2>Policy</h2>
+      <ul>
+        <li><a href="#">Policy note title</a> — short description.</li>
+      </ul>
+    </section>
+
+    <section id="wpwip">
+      <h2>Working Papers and Work in Progress</h2>
+      <div class="item">
+        <div class="item-title">Working paper title</div>
+        <div class="item-meta">with Co-authors • Working paper (Year)</div>
+        <div class="item-links"><a href="#">PDF</a></div>
+      </div>
+    </section>
+
+    <section id="resting">
+      <h2>Resting Papers</h2>
+      <ul>
+        <li>Older project title — <a href="#">PDF</a></li>
+      </ul>
+    </section>
+  </main>
 </body>
 </html>
+
