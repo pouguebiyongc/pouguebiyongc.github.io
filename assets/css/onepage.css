@@ -327,5 +327,20 @@ h2{
   fill: var(--wb-blue) !important;
 }
 
+/* About photo above title */
+.onepage .about-photo-top{
+  display: block;
+  margin: 0 auto 12px;   /* centered, space below */
+}
+
+/* Keep size discreet */
+.onepage .about-photo{
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid var(--border);
+}
+
 
 
