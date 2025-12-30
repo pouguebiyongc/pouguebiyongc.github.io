@@ -95,7 +95,7 @@ html{ scroll-behavior:smooth; }
 .onepage h2{
   margin: 0 0 12px;
   font-size: 1.6rem;              /* bigger */
-  font-weight: 700;
+  font-weight: 500;
   margin-top: 6px;
   color: #0a3d62;                 /* same marine blue as photo border */
 }
