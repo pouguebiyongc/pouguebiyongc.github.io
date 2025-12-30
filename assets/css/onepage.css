@@ -351,4 +351,62 @@ h2{
   border: 2px solid #0a3d62; /* marine blue */
 }
 
+/* Research section styling (Nina-style) */
+
+.onepage .research-interests{
+  margin: 6px 0 16px;
+  padding-left: 18px;
+}
+
+.onepage .research-interests li{
+  margin-bottom: 4px;
+}
+
+.onepage .paper{
+  margin-bottom: 20px;
+}
+
+.onepage .paper-title{
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+.onepage .paper-meta{
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin-bottom: 6px;
+}
+
+.onepage .paper-journal{
+  font-weight: 600;
+}
+
+.onepage .paper-links{
+  margin-bottom: 6px;
+}
+
+.onepage .pdf-link{
+  display: inline-block;
+  padding: 2px 8px;
+  background: var(--wb-blue);
+  color: #fff;
+  font-size: 0.85rem;
+  border-radius: 3px;
+  margin-right: 6px;
+}
+
+.onepage .pdf-link:hover{
+  background: var(--wb-blue-dark);
+}
+
+.onepage .abstract-link{
+  font-size: 0.85rem;
+}
+
+.onepage .paper-media{
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+
 
