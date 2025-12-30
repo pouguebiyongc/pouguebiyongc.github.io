@@ -387,7 +387,10 @@ html{ scroll-behavior:smooth; }
 }
 
 .onepage .paper-links{
-  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  gap: 8px;              /* space between PDF and Abstract */
+  margin-top: 4px;
 }
 
 .onepage .pdf-link{
@@ -510,7 +513,7 @@ html{ scroll-behavior:smooth; }
   color: #fff;
   font-size: 0.85rem;
   border-radius: 3px;
-  margin-left: 6px;
+  margin-left: 0; 
 }
 
 .onepage .abstract-toggle summary::-webkit-details-marker{
@@ -527,6 +530,11 @@ html{ scroll-behavior:smooth; }
   border-left: 2px solid var(--border);
   color: var(--text);
   max-width: 700px;
+}
+
+.onepage .pdf-link,
+.onepage .abstract-toggle summary{
+  line-height: 1.4;
 }
 
 
