@@ -413,15 +413,16 @@ html{ scroll-behavior:smooth; }
   color: var(--muted);
 }
 
-/* Subhead styling (Research sections) */
+/* Subheads (Research sections) */
 .onepage .subhead{
   margin: 18px 0 8px;
   font-size: 0.9rem;
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.04em;
-  color: var(--muted);
+  color: #0a3d62;   /* same marine blue as section titles */
 }
+
 
 /* Research interests as horizontal list with dots */
 .onepage .research-interests{
