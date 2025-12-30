@@ -1,83 +1,339 @@
+<body class="onepage">
 
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>About — Clémence Pougué Biyong</title>
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-      referrerpolicy="no-referrer" />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Source+Sans+3:wght@400;500&display=swap" rel="stylesheet">
-</head>
-<body>
-<header class="site-header large-header">
-  <div class="container profile-layout">
-    <div class="profile-photo">
-      <img src="assets/img/Photo.jpeg" alt="Clemence Pougué Biyong">
-    </div>
-    <div class="profile-text">
-        <h1>Clémence Pougué Biyong</h1>
-        <p class="tagline">Economist </p>
-        <!-- Icon row: Email • LinkedIn • Scholar • CV -->
-<div class="icon-row">
-  <!-- Email -->
-  <a href="mailto:cpouguebiyong@worldbank.org" class="icon" title="Email">
-    <i class="fa-solid fa-envelope"></i>
-  </a>
+  <!-- Sticky top bandeau -->
+<header class="topbar">
+  <div class="topbar-inner topbar-3col">
 
-  <!-- LinkedIn -->
-  <a href="https://www.linkedin.com/in/cl%C3%A9mence-pougu%C3%A9-biyong-87492a155/?originalSubdomain=fr"
-     class="icon" title="LinkedIn" target="_blank" rel="noopener">
-    <i class="fa-brands fa-linkedin"></i>
-  </a>
+    <!-- Left: photo + icons -->
+ <div class="top-left">
+  <div class="top-icons">
+    <a class="top-icon" href="assets/cv/cv.pdf" target="_blank" rel="noopener" aria-label="CV" title="CV">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M6 2h8l4 4v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zm8 1.5V7h3.5L14 3.5zM7 12h10v1.5H7V12zm0 3h10v1.5H7V15zm0-6h6v1.5H7V9z"/>
+      </svg>
+    </a>
 
-  <!-- Google Scholar (no official FA icon, use cap or your own PNG) -->
-  <a href="https://scholar.google.com/citations?user=H5azOdEAAAAJ&hl=fr&oi=ao"
-     class="icon" title="Google Scholar" target="_blank" rel="noopener">
-    <i class="fa-solid fa-graduation-cap"></i>
-    <!-- or replace the <i> with <img src="assets/img/google-scholar.png" alt="Google Scholar"> -->
-  </a>
+    <a class="top-icon" href="mailto:cpouguebiyong@worldbank.org" aria-label="Email" title="Email">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M2 6.5A2.5 2.5 0 0 1 4.5 4h15A2.5 2.5 0 0 1 22 6.5v11A2.5 2.5 0 0 1 19.5 20h-15A2.5 2.5 0 0 1 2 17.5v-11Zm2 .3v.3l8 5.2 8-5.2v-.3a.5.5 0 0 0-.5-.5h-15a.5.5 0 0 0-.5.5Zm16 2.1-7.4 4.8a1.5 1.5 0 0 1-1.6 0L3 8.9v8.6a.5.5 0 0 0 .5.5h15a.5.5 0 0 0 .5-.5V8.9Z"/>
+      </svg>
+    </a>
 
-  <!-- CV -->
-  <a href="assets/cv/cv.pdf" class="icon" title="Download CV" target="_blank" rel="noopener">
-    <i class="fa-solid fa-file-lines"></i>
-  </a>
+    <a class="top-icon" href="https://scholar.google.com/citations?user=H5azOdEAAAAJ&hl=fr" target="_blank" rel="noopener" aria-label="Google Scholar" title="Google Scholar">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M12 3 1 8l11 5 9-4.09V17h2V8L12 3zm-1 14.5-6.5-3V18L11 21l6.5-3v-3.5L11 17.5z"/>
+      </svg>
+    </a>
+
+    <a class="top-icon" href="https://www.linkedin.com/in/cl%C3%A9mence-pougu%C3%A9-biyong-87492a155" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M4.98 3.5A2.48 2.48 0 1 1 2.5 1a2.48 2.48 0 0 1 2.48 2.5zM.5 8.5h4V23h-4zM8.5 8.5h3.8v2h.05c.53-1 1.84-2.05 3.79-2.05 4.05 0 4.8 2.67 4.8 6.14V23h-4v-5.4c0-1.29-.02-2.95-1.8-2.95-1.8 0-2.08 1.4-2.08 2.85V23h-4z"/>
+      </svg>
+    </a>
+  </div>
 </div>
 
 
-     
-<!-- ✅ Keep the navbar inside the header -->
-      <nav class="nav">
-        <a href="index.html" class="active">About</a>
-        <a href="research.html">Research</a>
-      </nav>
+    <!-- Centre: name -->
+    <div class="top-center">
+      <span class="brand-name">CLÉMENCE POUGUÉ BIYONG</span>
     </div>
+
+    <!-- Right: nav -->
+    <nav class="topnav top-right">
+      <a href="#about">About</a>
+      <a href="#research">Research</a>
+      <a href="#policy">Policy</a>
+    </nav>
+
   </div>
 </header>
 
-<main class="container content">
-  <p class="bio">
-    I am an economist with an expertise in impact evaluation of public policies and interventions advancing women’s economic empowerment.
-</p> 
-  <p class="bio"> 
-    Since 2023 I have been working at the <a href="https://www.worldbank.org/ext/en/home" target="_blank">World Bank</a>, <a href=https://www.worldbank.org/en/programs/africa-gender-innovation-lab target="_blank">Africa Gender Innovation Lab</a>. 
-I explore how legal and policy reforms, coupled with innovative field interventions, can strengthen women’s human capital, unlock productivity, and drive inclusive prosperity.
-</p> 
-  <p class="bio">
-  I received my PhD in economics from the <a href="https://centredeconomiesorbonne.cnrs.fr/en/home/" target="_blank">University of Paris 1 Panthéon-Sorbonne</a> (2023) and my Master in Law from the <a href="https://www.ens-rennes.fr/" target="_blank">Ecole Normale Supérieure</a> (2017).
-  </p>
-</main>
 
-<footer class="site-footer">
-  <div class="container">
-    <small>
-      Hosted on GitHub Pages — Theme inspired by
-      <a href="https://github.com/orderedlist">orderedlist</a>.
-    </small>
+   <!-- Sticky top bandeau -->
+<link rel="stylesheet" href="assets/css/style.css" />
+<link rel="stylesheet" href="assets/css/onepage.css" />
+
+
+  <!-- Main content -->
+  <main class="main">
+
+    <!-- ABOUT -->
+   <section id="about" class="section">
+       <img src="assets/img/Photo.jpeg"
+       alt="Clémence Pougué Biyong"
+       class="about-photo about-photo-top">
+
+  <h2>About</h2>
+
+  <div class="about-block">
+
+    <p class="intro">
+  I am an economist with expertise in impact evaluations of public policies and innovative interventions advancing women’s economic empowerment. My work focuses on how both formal norms, embedded in laws and policies, and social norms, embedded in behaviours and institutions, unlock women’s human capital and shape women’s economic opportunities.<br><br>
+  Since 2023, I have been working at the
+  <a href="https://www.worldbank.org/ext/en/home" target="_blank" rel="noopener">World Bank</a>,
+  within the
+  <a href="https://www.worldbank.org/en/programs/africa-gender-innovation-lab" target="_blank" rel="noopener">Africa Gender Innovation Lab</a>,
+  where I evaluate interventions and regulatory reforms affecting women’s access to assets, entrepreneurship and labour markets. Another core part of my research examines how leveraging digital innovations can relax constraints and scale impact to access financial and health services.<br><br>
+  I am currently leading a new joint research agenda between
+  <a href="https://wbl.worldbank.org/" target="_blank" rel="noopener">Women, Business and the Law</a>
+  and the
+  <a href="https://www.worldbank.org/en/programs/africa-gender-innovation-lab" target="_blank" rel="noopener">Africa Gender Innovation Lab</a>,
+  bridging legal analysis and impact evaluation to inform regulatory reform, implementation, and enforcement.<br><br>
+  I received my PhD in Economics from the
+  <a href="https://centredeconomiesorbonne.cnrs.fr/en/home/" target="_blank" rel="noopener">University of Paris 1 Panthéon-Sorbonne</a> and a Master’s degree in Law from the
+  <a href="https://www.ens-rennes.fr/" target="_blank" rel="noopener">École Normale Supérieure</a>.
+    </p>
   </div>
-</footer>
 
+       
+    </section>
+
+    <!-- RESEARCH -->
+   <section id="research" class="section">
+  <h2>Research</h2>
+
+  <!-- Research interests -->
+  <div class="subhead">Research interests</div>
+  <div class="research-interests">
+   <span>Impact evaluation</span>
+  <span>Gender</span>
+  <span>Health behavior</span>
+  <span>Legal and regulatory reforms</span>
+</div>
+
+
+  <!-- Publications -->
+  <div class="subhead">Publications</div>
+
+  <div class="paper">
+    <div class="paper-title">
+      Hairdressers and well-being: Local services provision and mental health first response
+    </div>
+
+    <div class="paper-meta">
+      <span class="paper-coauthor" href="https://bjornnilsson.weebly.com/" target="_blank" rel="noopener"> with Nilsson B.</span> ·
+      <span class="paper-year">2025</span> ·
+      <span class="paper-journal">Journal of Development Economics</span>
+    </div>
+
+    <div class="paper-links">
+      <a class="pdf-link" href="https://doi.org/10.1016/j.jdeveco.2025.103528" target="_blank" rel="noopener">PDF</a>
+      <details class="abstract-toggle">
+      <summary>Abstract</summary>
+      <p>
+        Mental health is globally underfunded. In low-income settings, innovative and layman solutions may constitute alternatives to formal 
+        medical systems. We evaluate an innovative program training hairdressers to act as first responders to manifestations of mental health issues. 
+        73 hairdressers were trained in active listening. We find some evidence that the training improved hairdresser-customer interactions, 
+        but found no effect on the mental health of customers. We also found that training worsened mental health outcomes for hairdressers, 
+        and speculate that this has to do with reduced stigma and improved self-evaluative capacities, showing that both customers and hairdressers 
+        updated their beliefs about mental health. These results suggest that training alone in a context with stigma and poor mental 
+        health awareness may not be enough to measurably improve mental health outcomes, and future similar interventions may want to consider 
+        combining training with subsidized access to care, at least in an initial phase.
+      </p>
+    </details>
+    </div>
+
+    <div class="paper-media">
+      Media coverage:
+      <a href="https://voxdev.org/topic/health/caredressers-lessons-training-local-services-provide-mental-health-support" target="_blank" rel="noopener">VoxDev</a>, 
+      <a href="https://www.lemonde.fr/afrique/article/2024/08/30/en-afrique-de-l-ouest-des-coiffeuses-en-premiere-ligne-face-aux-troubles-de-sante-mentale_6299004_3212.html" target="_blank" rel="noopener">Le Monde</a>,
+      <a href="https://www.vogue.com/article/global-women-togo-braids" target="_blank" rel="noopener">Vogue</a>,
+      <a href="https://www.nytimes.com/2023/11/26/world/africa/hair-salon-mental-health-services.html" target="_blank" rel="noopener">The New York Times</a>.
+    </div>
+  </div>
+
+       <div class="paper">
+    <div class="paper-title">
+      The relatively young and rural population may limit the spread and severity of Covid-19 in Africa: a modelling study
+    </div>
+
+    <div class="paper-meta">
+      <span class="paper-coauthor" href="https://bzdiop.github.io/" target="_blank" rel="noopener"> with Diop B. Z.</span> ·
+      <span class="paper-coauthor" href="https://www.anl.gov/profile/marieme-ngom" target="_blank" rel="noopener"> Ngom M.</span> ·
+      <span class="paper-coauthor" href="https://scholar.google.com/citations?user=QR7un6AAAAAJ&hl=fr&oi=ao" target="_blank" rel="noopener"> Pougué Biyong J.</span> ·
+      <span class="paper-year">2020</span> ·
+      <span class="paper-journal">BMJ Global Health</span>
+    </div>
+
+    <div class="paper-links">
+      <a class="pdf-link" href="https://gh.bmj.com/content/5/5/e002699" target="_blank" rel="noopener">PDF</a>
+      <details class="abstract-toggle">
+      <summary>Abstract</summary>
+      <p>
+      A novel coronavirus disease 2019 (COVID-19) has spread to all regions of the world. There is great uncertainty regarding how countries’ characteristics will affect the spread of the epidemic; to date, there are few studies that attempt to predict the spread of the epidemic in African countries. In this paper, we investigate the role of demographic patterns, urbanisation and comorbidities on the possible trajectories of COVID-19 in Ghana, Kenya and Senegal.
+       We use an augmented deterministic Susceptible-Infected-Recovered model to predict the true spread of the disease, under the containment measures taken so far. We disaggregate the infected compartment into asymptomatic, mildly symptomatic and severely symptomatic to match observed clinical development of COVID-19. We also account for age structures, urbanisation and comorbidities (HIV, tuberculosis, anaemia).
+      In our baseline model, we project that the peak of active cases will occur in July, subject to the effectiveness of policy measures. When accounting for the urbanisation, and factoring in comorbidities, the peak may occur between 2 June and 17 June (Ghana), 22 July and 29 August (Kenya) and, finally, 28 May and 15 June (Senegal). Successful containment policies could lead to lower rates of severe infections. While most cases will be mild, we project in the absence of policies further containing the spread, that between 0.78% and 1.03%, 0.61% and 1.22%, and 0.60% and 0.84% of individuals in Ghana, Kenya and Senegal, respectively, may develop severe symptoms at the time of the peak of the epidemic.
+     Compared with Europe, Africa’s younger and rural population may modify the severity of the epidemic. The large youth population may lead to more infections but most of these infections will be asymptomatic or mild, and will probably go undetected. The higher prevalence of underlying conditions must be considered.
+      </p>
+    </details>
+    </div>
+  </div>
+
+  <!-- Work in progress -->
+  <div class="subhead">Selected work in progress</div>
+
+  <div class="paper">
+    <div class="paper-title">
+     The impact of regulatory reforms on women's economic opportunities in developing countries: an evidence review.
+    </div>
+    </div>
+
+  <div class="paper">
+    <div class="paper-title">
+      The Impact of Intimate Partner Violence Prevention Interventions among Refugees and Host Populations under the Social Safety Nets Project in Cameroon.
+    </div>
+
+    <div class="paper-meta">
+      <span class="paper-coauthor" href="https://rachelmcassidy.com/" target="_blank" rel="noopener"> with Cassidy R.</span> ·
+      <span class="paper-coauthor" href="https://www.estellekoussoube.com/" target="_blank" rel="noopener"> Koussoubé E.</span> ·
+      <span class="paper-coauthor" href="https://scholar.google.com/citations?user=HZvjn2UAAAAJ&hl=en" target="_blank" rel="noopener"> Pierotti R.</span> 
+   </div>
+  </div>
+
+  <div class="paper">
+    <div class="paper-title">
+      Scaling-Up AI-powered Digital Solutions to Expand Access to Mental Health Services for Displaced Populations (in Colombia, the DRC, Jordan, Poland and Uganda).
+    </div>
+
+    <div class="paper-meta">
+      <span class="paper-coauthor" href="https://sites.google.com/site/claradelavallade/" target="_blank" rel="noopener"> with Delavallade C.</span> ·
+      <span class="paper-coauthor" href="https://sites.google.com/site/quytoando/home" target="_blank" rel="noopener"> Do Q-T.</span> ·
+      <span class="paper-coauthor" href="https://sites.google.com/view/lelys-dinarte/home" target="_blank" rel="noopener"> Dinarte-Díaz L.</span> ·
+      <span class="paper-coauthor" href="https://scholar.google.com/citations?user=SPNZbfsAAAAJ&hl=en" target="_blank" rel="noopener"> Hailemichael A.</span> 
+    </div>
+  </div>
+
+  <!-- Working papers -->
+  <div class="subhead">Working papers</div>
+
+     <div class="paper">
+    <div class="paper-title">
+      Aid for aids and testing behavior: evidence from Malawi (2000-2016).
+    </div>
+
+    <div class="paper-links">
+      <a class="pdf-link" href="https://www.dropbox.com/s/ooha1xe2pfmu7y4/MWI_AIDS_2022_08.pdf?dl=0" target="_blank" rel="noopener">PDF</a>
+      <details class="abstract-toggle">
+      <summary>Abstract</summary>
+      <p>
+     What is the impact of foreign aid-funded HIV-prevention programs on the testing decision?
+Since the 1990s, Malawi has successfully fought HIV, yet it has the 6th HIV prevalence rate (2019) and the 10th HIV incidence rate (2016) worldwide. This empirical paper studies the impact of exposure to a prevention program on screening decision. It matches foreign aid-funded
+HIV-prevention programs implemented between 1997 and 2017 (AidData and Ministry of Finance of Malawi) to 92,310 respondents from four Demographic and Health Survey (DHS) waves.
+It finds that exposure to HIV-prevention programs has not increased the likelihood of getting tested. Instead, it has decreased the likelihood of being tested by 3 percent between 2004 and
+2010. This impact varies according to the intensity of exposure. The analysis of mechanisms suggests that foreign-funded HIV-prevention programs would have increased stigma without any
+impact on the level of knowledge about HIV, which was already high. The negative impact is stronger for men than women, encouraging further investigation into the “HIV testing burden” among couples.
+      </p>
+    </details>
+    </div>
+  </div>
+
+
+</section>
+
+
+    <!-- POLICY -->
+<section id="policy" class="section">
+  <h2>Policy</h2>
+
+  <div class="policy-grid">
+
+    <article class="policy-card">
+      <img class="policy-cover"
+           src="assets/img/policy/ado_report.png"
+           alt="Cover of Ado Report"
+           loading="lazy">
+
+      <div class="policy-body">
+        <div class="policy-title">Pathways to Prosperity for Adolescent Girls in Africa</div>
+         <div class="paper-meta">
+          <span class="paper-coauthor"> World Bank • Center for Global Development • Population Council</span> ·
+          <span class="paper-year">2024</span> 
+        </div>
+
+        <p class="policy-desc">
+          Africa stands at a crossroads, with its future prosperity hinging on the policy and investment decisions it makes today. 
+          The continent has an opportunity to shape the trajectories of generations to come by investing in the success of a pivotal 
+          population: its adolescent girls. With over 145 million adolescent girls calling Africa home, the potential for transformative 
+          change is immense. Yet challenges persist: from high rates of child marriage to limited educational opportunities. Over half of 
+          African girls ages 15 to 19 are out of school or married or have children. How can African countries overcome these challenges 
+          to ensure that adolescent girls enter adulthood empowered to thrive? Pathways to Prosperity for Adolescent Girls in Africa offers 
+          a groundbreaking roadmap for change. This landmark report outlines concrete, actionable policy recommendations; provides a comprehensive 
+          review of evidence-based interventions; presents a data-driven categorization of African countries to guide investments in adolescent 
+          girls; and introduces an innovative framework for understanding and measuring adolescent girls’ empowerment. Drawing on extensive 
+          research and consultations with adolescent girls, policymakers, and practitioners, the report reveals that investing in adolescent 
+          girls can yield a tenfold return in economic impact. It outlines six key areas for targeted action: building human capital, enhancing 
+          economic success, focusing on the most vulnerable girls, adopting a holistic approach, addressing data and evidence gaps, and mobilizing 
+          diverse stakeholders.
+        </p>
+
+        <div class="policy-links">
+          <a class="pdf-link" href="https://openknowledge.worldbank.org/bitstreams/e8a16227-c015-437c-b661-c86788dff947/download" target="_blank" rel="noopener">PDF</a>
+          <a href="https://www.worldbank.org/en/region/afr/publication/pathways-to-prosperity-for-adolescent-girls-in-africa" target="_blank" rel="noopener">Project page</a>
+          <!-- Optional -->
+          <!-- <a href="#" target="_blank" rel="noopener">Slides</a> -->
+        </div>
+      </div>
+    </article>
+
+        <article class="policy-card">
+      <img class="policy-cover"
+           src="assets/img/policy/afdd2022_report.jpg"
+           alt="Cover of AfDD 2022"
+           loading="lazy">
+
+      <div class="policy-body">
+        <div class="policy-title">Africa's Development Dynamics: Regional Value Chains for a Sustainable Recovery</div>
+        <div class="policy-meta">OECD • 2022</div>
+
+        <p class="policy-desc">
+         Africa’s Development Dynamics uses lessons from Central, East, North, Southern and West Africa to develop policy recommendations 
+          and share good practices. Drawing on the most recent statistics, the analysis of development dynamics aims to assist African 
+          leaders in reaching the targets of the African Union’s Agenda 2063 at all levels: continental, regional, national and local. 
+          The 2022 edition explores how developing regional value chains can help African countries rebound from the socio-economic 
+          shocks of the COVID-19 pandemic and accelerate productive transformation. It targets policy areas where private and public 
+          actors can support regional value chains when operationalising the African Continental Free Trade Area (AfCFTA). African firms 
+          can harness digital innovations to reduce production costs, and governments can design policies for skills development, public 
+          procurement and foreign investment to strengthen industrial linkages. Two continental chapters examine related African initiatives 
+          and global trends. Five chapters tailor policy recommendations to specific value chains in each region.
+        </p>
+
+        <div class="policy-links">
+          <a class="pdf-link" href="https://www.oecd.org/content/dam/oecd/en/publications/reports/2022/05/africa-s-development-dynamics-2022_8e128a8d/2e3b97fd-en.pdf" target="_blank" rel="noopener">PDF</a>
+          <a href="https://www.oecd.org/en/publications/africa-s-development-dynamics-2022_2e3b97fd-en.html" target="_blank" rel="noopener">Project page</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="policy-card">
+      <img class="policy-cover"
+           src="assets/img/policy/afdd2018_report.jpg"
+           alt="Cover of AfDD 2018"
+           loading="lazy">
+
+      <div class="policy-body">
+        <div class="policy-title">Africa's Development Dynamics: Growth, Job and Inequalities</div>
+        <div class="policy-meta">OECD • 2018</div>
+
+        <p class="policy-desc">
+          This new annual report presents an Africa open to the world and towards the future. uses the lessons learned in the five African 
+          regions – Central, East, North, Southern and West Africa – to develop recommendations and share good practices. The report 
+          identifies innovative policies and offers practical policy recommendations, adapted to the specificities of African economies. 
+          Drawing on the most recent available statistics, this analysis of development dynamics aims to help African leaders reach the targets 
+          of the African Union’s Agenda 2063 at all levels: continental, regional, and national. Every year this report will focus on one 
+          strategic theme. This first edition explores the dynamics of growth, jobs, and inequalities. It proposes ten decisive actions to 
+          promote sustainable economic and social development and to strengthen institutions in Africa.
+        </p>
+
+        <div class="policy-links">
+          <a class="pdf-link" href="https://www.oecd.org/content/dam/oecd/en/publications/reports/2018/07/africa-s-development-dynamics-2018_g1g906a2/9789264302501-en.pdf" target="_blank" rel="noopener">PDF</a>
+          <a href="https://www.oecd.org/en/publications/africa-s-development-dynamics-2018_9789264302501-en.html#abstract" target="_blank" rel="noopener">Project page</a>
+        </div>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+  
 </body>
-</html>
