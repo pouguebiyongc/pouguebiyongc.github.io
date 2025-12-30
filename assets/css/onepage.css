@@ -408,5 +408,32 @@ h2{
   color: var(--muted);
 }
 
+/* Subhead styling (Research sections) */
+.onepage .subhead{
+  margin: 18px 0 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+}
+
+/* Research interests as horizontal list with dots */
+.onepage .research-interests{
+  margin: 6px 0 16px;
+  font-size: 0.95rem;
+  color: var(--text);
+}
+
+.onepage .research-interests span{
+  display: inline;
+}
+
+.onepage .research-interests span:not(:last-child)::after{
+  content: " · ";
+  color: var(--muted);
+}
+
+
 
 
